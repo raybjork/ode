@@ -16,6 +16,11 @@ const (
 	ManualThreadCleanupIFlag = C.dInitFlagManualThreadCleanup
 )
 
+// Collision detection flags
+const (
+	ContactsUnimportantFlag = 0x80000000
+)
+
 // Allocation flags
 const (
 	BasicDataAFlag     = C.dAllocateFlagBasicData
