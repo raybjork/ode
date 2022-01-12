@@ -1,5 +1,6 @@
 package ode
 
+// #cgo pkg-config: ode
 // #include <ode/ode.h>
 import "C"
 

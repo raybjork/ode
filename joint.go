@@ -1,5 +1,6 @@
 package ode
 
+// #cgo pkg-config: ode
 // #include <ode/ode.h>
 import "C"
 
@@ -598,7 +599,8 @@ func (j Hinge2Joint) Anchor2() Vector3 {
 
 // SetAxis1 sets the first axis.
 func (j Hinge2Joint) SetAxis1(axis Vector3) {
-	C.dJointSetHinge2Axis1(j.c(), C.dReal(axis[0]), C.dReal(axis[1]), C.dReal(axis[2]))
+	// ODE library has deprecated function below
+	// C.dJointSetHinge2Axis1(j.c(), C.dReal(axis[0]), C.dReal(axis[1]), C.dReal(axis[2]))
 }
 
 // Axis1 returns the first axis.
@@ -610,7 +612,8 @@ func (j Hinge2Joint) Axis1() Vector3 {
 
 // SetAxis2 sets the second axis.
 func (j Hinge2Joint) SetAxis2(axis Vector3) {
-	C.dJointSetHinge2Axis2(j.c(), C.dReal(axis[0]), C.dReal(axis[1]), C.dReal(axis[2]))
+	// ODE library has deprecated function below
+	// C.dJointSetHinge2Axis2(j.c(), C.dReal(axis[0]), C.dReal(axis[1]), C.dReal(axis[2]))
 }
 
 // Axis2 returns the second axis.

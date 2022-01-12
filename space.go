@@ -1,5 +1,6 @@
 package ode
 
+// #cgo pkg-config: ode
 // #include <ode/ode.h>
 // extern void callNearCallback(void *data, dGeomID obj1, dGeomID obj2);
 import "C"

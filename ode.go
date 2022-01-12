@@ -1,8 +1,9 @@
-// Package ode provide a Go interface to the Open Dynamics Engine library.
+// package ode provide a Go interface to the Open Dynamics Engine library.
 // See the ODE documentation for more information.
 package ode
 
 // #cgo LDFLAGS: -lode
+// #cgo pkg-config: ode
 // #include <ode/ode.h>
 import "C"
 
